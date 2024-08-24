@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  19 AUG 2024 15:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  24 AUG 2024 12:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,6 +22,7 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+** ATTENTION: Single column mode is not typically used with IEEE publications.
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen141
@@ -1249,109 +1250,72 @@ LaTeX Info: Redefining \nameref on input line 50.
 \openout5 = `ASSN3.out'.
 
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 6
-5.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 6
-5.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 6
-5.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 6
-5.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
-5.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 65--70
+Underfull \hbox (badness 10000) in paragraph at lines 64--69
 
  []
 
 
-Underfull \hbox (badness 4981) in paragraph at lines 78--79
-\OT1/txr/m/n/12 sides BC,CA,AB re-spec-tively. Prove that
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
-[]$\OML/txmi/m/it/12 A[]; A[]; ::::::A[]$ \OT1/txr/m/n/12 are the ver-tices of 
-a
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
-\OT1/txr/m/n/12 reg-u-lar plane poly-gon with n sides
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
-\OT1/txr/m/n/12 and $\OT1/txr/bx/n/12 O$ \OT1/txr/m/n/12 is its cen-tre. Show t
-hat
- []
-
-
-Underfull \hbox (badness 1939) in paragraph at lines 80--83
-[][] [] \OT1/txr/m/n/12 = [] []$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--83
+Underfull \hbox (badness 10000) in paragraph at lines 79--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-\OT1/txr/m/n/12 and $[] \OML/txmi/m/it/12 x \OT1/txr/m/n/12 + [] \OML/txmi/m/it
-/12 y \OT1/txr/m/n/12 +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-\OT1/txr/m/n/12 are $[]$,$[]$,$[]$
+Overfull \hbox (30.16296pt too wide) in paragraph at lines 87--88
+[]$\OT1/txr/m/n/12 , re-spec-tively. If the points $[]$ lie on a plane, find th
+e value of $\OML/txmi/m/it/12 ^^U$\OT1/txr/m/n/12 .  $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
-[] \OT1/txr/m/n/12 =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--92
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 
  []
 
@@ -1361,26 +1325,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 95--103
-[]\OT1/txr/m/n/12 If vec-tors $\OT1/txr/bx/n/12 a\OML/txmi/m/it/12 ; \OT1/txr/b
-x/n/12 b\OML/txmi/m/it/12 ; \OT1/txr/bx/n/12 c$ \OT1/txr/m/n/12 are copla-nar, 
-show that
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 95--103
 
- []
-
-
-Underfull \hbox (badness 1681) in paragraph at lines 104--105
-\OT1/txr/m/n/12 If OD and AE in-ter-sect at $\OT1/txr/bx/n/12 P$\OT1/txr/m/n/12
- , de-ter-mine
- []
-
-
-Underfull \hbox (badness 6859) in paragraph at lines 104--105
-\OT1/txr/m/n/12 the ra-tio OP:PD us-ing vec-tor meth-ods.
  []
 
 
@@ -1390,25 +1336,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 106--107
-[]\OT1/txr/m/n/12 Let $[]\OML/txmi/m/it/12 ; []$\OT1/txr/m/n/12 , and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
-[]$\OT1/txr/m/n/12 . De-ter-mine a vec-tor $\OT1/txr/bx/n/12 R$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
-
-Underfull \hbox (badness 4328) in paragraph at lines 108--109
-\OT1/txr/m/n/12 make an ob-tuse an-gle with each other.
- []
-
-
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
@@ -1419,35 +1350,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--111
  []
 
 
-Underfull \hbox (badness 5217) in paragraph at lines 112--113
-\OT1/txr/m/n/12 prove that the vec-tor $[] +
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-] [2
-
-] (./ASSN3.aux)
+[2] (./ASSN3.aux)
 Package rerunfilecheck Info: File `ASSN3.out' has not changed.
 (rerunfilecheck)             Checksum: 34E28F221CD71992514AB4B4A9F873F5;431.
  ) 
 Here is how much of TeX's memory you used:
- 29640 strings out of 478287
- 583794 string characters out of 5849290
- 862140 words of memory out of 5000000
+ 29638 strings out of 478287
+ 583783 string characters out of 5849290
+ 853156 words of memory out of 5000000
  47176 multiletter control sequences out of 15000+600000
- 528912 words of font info for 145 fonts, out of 8000000 for 9000
+ 527562 words of font info for 143 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,8n,96p,544b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,8n,96p,546b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1457,7 +1375,7 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on ASSN3.pdf (2 pages, 65428 bytes).
+Output written on ASSN3.pdf (2 pages, 64220 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream
