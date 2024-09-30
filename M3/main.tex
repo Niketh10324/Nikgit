@@ -7,7 +7,6 @@
 
 \setlength{\headheight}{1cm} % Set the height of the header box
 \setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
-
 \usepackage{gvv-book}
 \usepackage{gvv}
 \usepackage{cite}
@@ -41,9 +40,8 @@
 \bibliographystyle{IEEEtran}
 \vspace{3cm}
 
-\title{1.1.5.13}
-\author{EE24BTECH11047 - Niketh Prakash Achanta
-}
+\title{1.1.8.26}
+\author{EE24BTECH11047 - Niketh Prakash Achanta}
 % \maketitle
 % \newpage
 % \bigskip
@@ -52,55 +50,58 @@
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 \setlength{\intextsep}{10pt} % Space between text and floats
-
+\numberwithin{equation}{enumi}
 \numberwithin{figure}{enumi}
+
+
 \renewcommand{\thetable}{\theenumi}
 
 
-8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p8o9p\textbf{Question}:\\
-Find the ratio in which the $Y$ axis divides the line segment joining the points $\brak{5, -6}$
-and $\brak{-1, -4}$. Also find the coordinates of the point of intersection. \hfill (10, 2012)
-\\ \textbf{Solution: }\\
+\textbf{Question}:\\
+Find a point on the Y axis which is equidistant from the points $\vec{A}\myvec{6,5}$ $\vec{B}\myvec{-4,3}$.\\
+\\ \solution \\
     \begin{table}[h!]    
       \centering
-      \input{tables/table1.tex}
+      \input{tables/table.tex}
       \caption{}
     \end{table}\\
-Using the section formula:
+If $\vec{P}$ is equidistant from the points $\vec{A}$ and $\vec{B}$
     \begin{align}
-        C  = \brak{\frac{B + kA}{1 + k}} \label{eq1.1.5.13.1}
+        \abs{\abs{\vec{P}-\vec{A}}} = \abs{\abs{\vec{P}-\vec{B}}} \label{eq1.1.9.17.1}
+    \end{align}
+     \begin{align}
+        \abs{\abs{\vec{P}-\vec{A}}}^2 = \abs{\abs{\vec{P}-\vec{B}}}^2\label{eq1.1.9.17.2}
     \end{align}
     \begin{align}
-        C = \myvec{0 \\ y} \label{eq1.1.5.13.2}
+    	\abs{\abs{\vec{P}}}^2 - 2\vec{P}^\top \vec{A} + \abs{\abs{\vec{A}}}^2 = \abs{\abs{\vec{P}}}^2 - 2\vec{P}^\top\vec{B} + \abs{\abs{\vec{B}}}^2\label{eq1.1.9.17.3}
     \end{align}
-Also,
+By simplifying further,
     \begin{align}
-        C = \myvec{\frac{5k-1}{k+1} \\ \frac{-6k-4}{1+k}} \label{eq1.1.5.13.3}
+    	\brak{\vec{A}-\vec{B}}^\top \vec{P} = \frac{\abs{\abs{\vec{A}}}^2-\abs{\abs{\vec{B}}}^2}{2} \\
+    	\myvec{10 \\ 2}^\top \vec{P} = \frac{\abs{\abs{\myvec{6 \\ 5}}}^2-\abs{\abs{\myvec{-4 \\ 3}}}^2}{2} = 18\label{eq1.1.9.17.4}
     \end{align}
-Solving for k using $x$ Coordinate of $C$
+Comparing with $n^\top x = c$
     \begin{align}
-        \brak{\frac{5k-1}{k+1}} = 0  \label{eq1.1.5.13.4}
-    \end{align}
-    \begin{align}
-        k = \frac{1}{5} = 0.2\label{eq1.1.5.13.5}
-    \end{align}
-Finding $y$ Coordinate of $C$ using $k$,
-    \begin{align}
-        y = \brak{\frac{-6k-4}{k+1}}  \label{eq1.1.5.13.6}
-    \end{align}
-    \begin{align}
-        y = \brak{\frac{-1.2-4}{0.2+1}} \label{eq1.1.5.13.7}
-    \end{align}
-    \begin{align}
-        y = -4.3334 \label{eq1.1.5.13.8}
+    	\vec{n} = \myvec{10 \\ 2}\\ \label{eq1.1.8.28.5}
+	    \vec{c} = 18\\
+     10x+2y=18\\
+     x=0,y=9\\
+     \vec{P}=\myvec{0 \\ 9}
     \end{align}
     \begin{figure}[h]
         \centering
-       \includegraphics[width=0.7\linewidth]{figs/fig1.png}
+       \includegraphics[width=\linewidth]{figs/fig1.png}
        \caption{}
        \label{graph}
     \end{figure}
+
+
+
 \end{document}  
+
+
+
+
 
 
 
