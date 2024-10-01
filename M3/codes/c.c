@@ -10,10 +10,21 @@ int main() {
     double A[3] = {6, 5, 0};
     double B[3] = {-4, 3, 0};
 
-    double y = 9;
+    // Calculate squared norms
+    double normA_squared = A[0]*A[0] + A[1]*A[1]; // ||A||^2
+    double normB_squared = B[0]*B[0] + B[1]*B[1]; // ||B||^2
 
+    // Calculate the right-hand side
+    double rhs = (normA_squared - normB_squared) / 2;
+
+    // Coefficients for the equation 10x + 2y = rhs
+    double n[2] = {10, 2}; // Derived from (A-B)^T
+    double x = 0; // From our derived result
+    double y = (rhs - n[0] * x) / n[1]; // Solve for y
+
+    // Create the point P
     P = createMat(3, 1);
-    P[0][0] = 0;         
+    P[0][0] = x;         
     P[1][0] = y;        
     P[2][0] = 0;        
 
