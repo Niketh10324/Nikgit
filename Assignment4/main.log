@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  11 OCT 2024 18:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  11 OCT 2024 18:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1927,11 +1927,6 @@ Underfull \hbox (badness 3260) in paragraph at lines 124--126
 xmi/m/it/10 ; n \OMS/txsy/m/n/10 2 \OML/txmi/m/it/10 N; n > \OT1/txr/m/n/10 2\O
 ML/txmi/m/it/10 :$ \OT1/txr/m/n/10 If $\OML/txmi/m/it/10 f[] [] \OT1/txr/m/n/10
  =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
-
  []
 
 [2] (./main.aux)
