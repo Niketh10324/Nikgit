@@ -1,0 +1,218 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{gvv-book}
+\usepackage{tikz}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE-2007-AE-35-51}
+\author{EE24BTECH11047 - Niketh Prakash Achanta}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}[start=35]
+    \item The lateral-directional characteristic equation for an airplane gave the following set of roots: $\lambda_1 = -0.6, \lambda_2 = -0.002, \lambda_{3,4} = -0.06 \pm j1.5$, where $j = \sqrt{-1}$. The damping ratio corresponding to the Dutch-roll mode will be:
+    \begin{enumerate}
+        \item 0.04
+        \item 0.66
+        \item 0.35
+        \item 0.18
+    \end{enumerate}
+
+    \item An airplane is flying at an altitude of 10 km above sea level. Outside air temperature and density at 10 km altitude are 223 K and 0.413 kg/$m^3$ respectively. The airspeed indicator of the airplane indicates a speed of 60 m/s. Density of air at sea level is 1.225 kg/$m^3$ and the value of the gas constant \brak{R} is 288 J/kg/K. The stagnation pressure $P_0$ measured by the Pitot tube mounted on the wing tip of the airplane will be of magnitude:
+    \begin{enumerate}
+        \item $3.5 \times 10^3 N/m^2$
+        \item $2.0 \times 10^4 N/m^2$
+        \item $2.87 \times 10^4 N/m^2$
+        \item $0.6 \times 10^4 N/m^2$
+    \end{enumerate}
+
+    \item If the center of gravity of an airplane is moved forward towards the nose of the airplane, the $C_{Lmax}$ \brak{maximum\ value\ of\ the\ lift\ coefficient} value for which the airplane can be trimmed $\brak{C_m = 0}$ will
+    \begin{enumerate}
+        \item decrease
+        \item increase
+        \item remain the same
+        \item depend upon rudder deflection
+    \end{enumerate}
+
+    \item If the contribution of only the horizontal tail of an airplane was considered for estimating $\frac{\partial C_m}{\partial \alpha}$, and if the tail moment arm $l_t$ was doubled, then how many times the original value would the new $\frac{\partial C_m}{\partial \alpha}$ become?
+    \begin{enumerate}
+        \item two times
+        \item three times
+        \item 1.414 times
+        \item 1.732 times
+    \end{enumerate}
+
+    \item If the vertical tail of an airplane is inverted and put below the horizontal tail, then the contribution to roll derivative $\frac{\partial C_l}{\partial \beta}$ will be:
+    \begin{enumerate}
+        \item negative
+        \item positive
+        \item zero
+        \item imaginary
+    \end{enumerate}
+
+    \item Let a system of linear equations be as follows:\\
+    $x - y + 2z = 0\\
+    2x + 3y - z = 0\\
+    2x - 2y + 4z = 0$\\
+    This system of equations has:
+    \begin{enumerate}
+        \item No non-trivial solution
+        \item Infinite number of non-trivial solutions
+        \item A unique non-trivial solution
+        \item Two non-trivial solutions
+    \end{enumerate}
+
+    \item A turbulent boundary layer remains attached over a longer distance on the upper surface of an airfoil than does a laminar boundary layer, because:
+    \begin{enumerate}
+        \item the turbulent boundary layer is more energetic and hence can overcome the adverse pressure gradient better
+        \item the laminar boundary layer develops more skin friction and hence slows down more rapidly
+        \item turbulence causes the effective coefficient of viscosity to reduce, resulting in less loss of momentum in the boundary layer
+        \item the turbulent boundary layer is thicker, hence the velocity gradients in it are smaller, therefore viscous losses are less
+    \end{enumerate}
+
+    \item The laminar boundary layer over a large flat plate held parallel to the freestream is 5 mm thick at a point 0.2 m downstream of the leading edge. The thickness of the boundary layer at a point 0.8 m downstream of the leading edge will be:
+    \begin{enumerate}
+        \item 20 mm
+        \item 10 mm
+        \item 5 mm
+        \item 2.5 mm
+    \end{enumerate}
+
+    \item If horizontal tail area is increased while the elevator to horizontal tail area ratio is kept the same, then:
+    \begin{enumerate}
+        \item both longitudinal static stability and elevator control power will increase
+        \item only longitudinal static stability will increase
+        \item only elevator control power will increase
+        \item neither stability nor control power changes
+    \end{enumerate}
+
+    \item A circular shift is made-up of two materials A and B. The inner core is made-up of material A with diameter $d_\lambda$, torsion constant $J_A$,a nd shear modulus $G_A$. The outer sleeve is made-up of material B with diameter $d_B$, torsion constant $J_B$, and shear modulus $G_B$. The composite shaft is of length L and is subjected to pure torsion moment T. The torsional stiffness, $\frac{T}{\phi}$, where $\phi$ is the angle of twist, of this composite shaft is then
+        \begin{figure}[h]
+        \centering
+       \includegraphics[width=0.7\linewidth]{figs/fig1.png}
+       \caption{}
+       \end{figure}
+    
+    \begin{enumerate}
+        \item $\frac{\brak{G_A J_A - G_B J_B}}{\brak{G_A J_A + G_B J_B}}$
+	      \item $\frac{G_A J_A + G_B J_B}{L}$
+	    \item $\frac{\brak{G_A+G_B}\brak{J_A+J_B}}{L}$
+	    \item $\frac{G_A J_B + G_B J_A}{L}$
+    \end{enumerate}
+  \newpage  
+  
+   \item Air enters through the eye of a centrifugal compressor with a stagnation temperature 300K and exits the compressor with a stagnation temperature 424K. If the isentropic efficiency of the compressor is 0.81 and the ratio of specific heats of the flowing gas \brak{assumed\ as\ constant} is 1.4, then the pressure ratio across the compressor is
+    \begin{enumerate}
+    	\item 2.75
+    	\item 5.60
+    	\item 65.00
+	\item 228.00
+    \end{enumerate}
+
+    \item  The boundary conditions for an Euler-Bernoulli column are given in column X and the critical buckling loads are given in column Y. Match the boundary condition of the column to its corresponding buckling load, $P_\sigma$ is the critical buckling load, E is the Young's modulus of the column material, I its sectional moment of area, and L is the length of the column.\\
+    \begin{table}[h!]
+    \centering
+    \input{tables/table.tex}
+    \caption{}
+    \end{table}
+    \begin{enumerate}
+    \item X1-Y4,X2-Y3,X3-Y1,X4-Y2
+    \item X1-Y4,X2-Y2,X3-Y3,X4-Y1
+    \item X1-Y4,X2-Y1,X3-Y2,X4-Y3
+    \item X1-Y4,X2-Y3,X3-Y2,X4-Y1
+    \end{enumerate}
+
+    \item For an impulse turbine with identical stages, the hot gas exits from the stator blades at the mean blade height at an absolute angle of 70 degrees with the axis of the turbine. If the absolute inlet blade angle with the axis of the turbine at the mean blade height for the rotor blades is 37 degrees, then the absolute exit blade angle with the axis of the turbine at the mean blade height of the rotor blades is:
+    \begin{enumerate}
+        \item 33 degrees
+        \item 37 degrees
+        \item 53 degrees
+        \item 53.5 degrees
+    \end{enumerate}
+
+    \item Which one of the following materials should be selected to design an axial flow turbine operating at high temperatures?
+    \begin{enumerate}
+        \item Steel alloy
+        \item Titanium alloy
+        \item Nickel alloy
+        \item Aluminum alloy
+    \end{enumerate}
+
+    \item Which one of the following statements is true?
+    \begin{enumerate}
+        \item The isentropic efficiency of a compressor is constant throughout the compressor
+        \item Flow separation problems are more critical for the axial compressors than for the centrifugal compressors
+        \item The pressure ratio of a centrifugal compressor approaches zero as the compressor mass flow rate approaches zero
+        \item Centrifugal compressors are always designed with multiple stages
+    \end{enumerate}
+
+    \item An athlete starts running with a speed $V_0$. Subsequently, his speed decreases by an amount that is proportional to the distance that he has already covered. The distance covered will be:
+    \begin{enumerate}
+        \item Linear in time
+        \item Quadratic in time
+        \item Exponential in time
+        \item Logarithmic in time
+    \end{enumerate}
+
+    \item The on-board rocket motor of a satellite of initial mass 2000 kg provides a specific impulse of 280 seconds. If this motor is fired to give a speed increment of 500 m/s along the direction of motion, the mass of propellant consumed is:
+    \begin{enumerate}
+        \item 685 kg
+        \item 333 kg
+        \item 1666 kg
+        \item 167 kg
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
