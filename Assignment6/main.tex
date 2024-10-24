@@ -137,21 +137,53 @@
         \item only elevator control power will increase
         \item neither stability nor control power changes
     \end{enumerate}
-
+\newpage
     \item A circular shift is made-up of two materials A and B. The inner core is made-up of material A with diameter $d_\lambda$, torsion constant $J_A$,a nd shear modulus $G_A$. The outer sleeve is made-up of material B with diameter $d_B$, torsion constant $J_B$, and shear modulus $G_B$. The composite shaft is of length L and is subjected to pure torsion moment T. The torsional stiffness, $\frac{T}{\phi}$, where $\phi$ is the angle of twist, of this composite shaft is then
-        \begin{figure}[h]
-        \centering
-       \includegraphics[width=0.7\linewidth]{figs/fig1.png}
-       \caption{}
-       \end{figure}
-    
-    \begin{enumerate}
+        \begin{tikzpicture}
+
+    \begin{scope}[shift={(0,0)}]  
+
+        \draw[thick] (0,0) circle (1cm);  
+        \draw[thick] (0,0) circle (2cm);  
+
+        \node at (0,0) {\textbf{A}};
+        \node at (0,-1.5) {\textbf{B}};
+
+        \draw[<->, thick] (-1,-3) -- (1,-3) node[midway, above] {$dA$};  
+        \draw[<->, thick] (-2,-3.5) -- (2,-3.5) node[midway, below] {$dB$};  
+
+        \draw[dashed] (-1,0) -- (-1,-3);  
+        \draw[dashed] (1,0) -- (1,-3);    
+        \draw[dashed] (-2,0) -- (-2,-3.5);  
+        \draw[dashed] (2,0) -- (2,-3.5);    
+
+    \end{scope}
+
+    \begin{scope}[shift={(7,0)}]  
+
+        \draw[thick] (-1.5,2) rectangle (1.5,2.5);  
+        \node at (0,2.25) {\textbf{B}};
+       
+        \draw[thick] (-1.5,1) rectangle (1.5,2);  
+        \node at (0,1.5) {\textbf{A}};
+       
+        \draw[thick] (-1.5,1) rectangle (1.5,0.5);  
+
+        \draw[<->, thick] (-1.5,0) -- (1.5,0) node[midway, above] {$L$};  
+
+        \draw[->, thick] (-1.5,1.5) -- (-2,1.5) node[midway, above] {\textbf{T}};  
+        \draw[->, thick] (1.5,1.5) -- (2,1.5) node[midway, above] {\textbf{T}};    
+
+    \end{scope}
+
+\end{tikzpicture}
+
+\begin{enumerate}
         \item $\frac{\brak{G_A J_A - G_B J_B}}{\brak{G_A J_A + G_B J_B}}$
 	      \item $\frac{G_A J_A + G_B J_B}{L}$
 	    \item $\frac{\brak{G_A+G_B}\brak{J_A+J_B}}{L}$
 	    \item $\frac{G_A J_B + G_B J_A}{L}$
     \end{enumerate}
-  \newpage  
   
    \item Air enters through the eye of a centrifugal compressor with a stagnation temperature 300K and exits the compressor with a stagnation temperature 424K. If the isentropic efficiency of the compressor is 0.81 and the ratio of specific heats of the flowing gas \brak{assumed\ as\ constant} is 1.4, then the pressure ratio across the compressor is
     \begin{enumerate}
