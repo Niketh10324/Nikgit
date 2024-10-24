@@ -1,0 +1,254 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{gvv-book}
+\usepackage{tikz}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide}
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                      
+\usepackage{calc}                                            
+\usepackage{multirow}                                        
+\usepackage{hhline}                                          
+\usepackage{ifthen}                                          
+\usepackage{lscape}
+
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE-2008-MA-18-34}
+\author{EE24BTECH11047 - Niketh Prakash Achanta}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}[start=18]
+%18
+\item Let a primal linear programming problem admit an optimal solution. Then the corresponding dual problem
+    \begin{enumerate}
+        \item does not have a feasible solution
+        \item has a feasible solution but does not have any optimal solution
+        \item does not have a convex feasible region
+        \item has an optimal solution
+    \end{enumerate}
+%19
+\item In any system of particles, suppose we do not assume that the internal forces come in pairs. Then the fact that the sum of internal forces is zero follows from
+    \begin{enumerate}
+        \item Newton's second law
+        \item conservation of angular momentum
+        \item conservation of energy
+        \item principle of virtual displacement
+    \end{enumerate}
+%20
+\item Let $q_1, q_2, \cdots, q_n$ be the generalized coordinates and $\dot{q}_1, \dot{q}_2, \cdots, \dot{q}_n$ be the generalized velocities in a conservative force field. If under a transformation $\varphi$, the new coordinate system has the generalized coordinates $Q_1, Q_2, \cdots, Q_n$ and velocities $\dot{Q}_1, \dot{Q}_2, \cdots, \dot{Q}_n$, then the equation $\frac{\partial L}{\partial \dot{q}_k} = \frac{d}{dt} \brak{\frac{\partial L}{\partial \dot{q}_k}}$
+takes the form
+    \begin{enumerate}
+        \item $\frac{\partial L}{\partial Q_k} = \varphi \frac{d}{dt} \brak{\frac{\partial L}{\partial \dot{Q}_k}}$
+        \item $\varphi \frac{\partial L}{\partial Q_k} = \frac{d}{dt} \brak{\frac{\partial L}{\partial \dot{Q}_k}}$
+        \item $\frac{\partial L}{\partial Q_k} = \frac{d}{dt} \varphi \brak{\frac{\partial L}{\partial \dot{Q}_k}}$
+        \item $\frac{\partial L}{\partial Q_k} = \varphi \frac{d}{dt} \brak{\frac{\partial L}{\partial \dot{Q}_k}}$
+    \end{enumerate}
+%21
+\item Let $T : \mathbf{R}^4 \to \mathbf{R}^4$ be the linear map satisfying
+\\$
+T(e_1) = e_2, T(e_2) = e_3, T(e_3) = 0, T(e_4) = e_3,
+$\\
+where $\cbrak{e_1, e_2, e_3, e_4}$ is the standard basis of $\mathbf{R}^4$. Then
+    \begin{enumerate}
+        \item $T$ is idempotent
+        \item $T$ is nvertible
+        \item Rank $T = 3$
+        \item $T$ is nilpotent
+    \end{enumerate}
+%22
+\item Let $M = \begin{pmatrix}
+1 & 1 & 2 \\
+0 & 1 & 1 \\
+0 & 1 & 1
+\end{pmatrix}$ and $V = \{ Mx : x \in \mathbf{R}^3 \}$. Then an orthonormal basis for $V$ is
+\begin{enumerate}
+    \item $\cbrak{\brak{1, 0, 0}^T, \frac{1}{\sqrt{5}}\brak{0, 2, 1}^T, \frac{1}{\sqrt{6}}\brak{2, 1, 1}^T}$
+    \item $\cbrak{\brak{1, 0, 0}^T, \frac{1}{\sqrt{2}}\brak{0, 1, 1}^T}$
+    \item $\cbrak{\brak{1, 0, 0}^T, \frac{1}{\sqrt{3}}\brak{1, 1, 1}^T, \frac{1}{\sqrt{6}}\brak{2, 1, 1}^T}$
+    \item $\cbrak{\brak{1, 0, 0}^T, \brak{0, 0, 1}^T}$
+\end{enumerate}
+%23
+\item For any $n \in \mathbf{N}$, let $P_n$ denote the vector space of all polynomials with real coefficients and of degree at most $n$. Define $T: P_n \rightarrow P_{n+1}$ by
+\begin{align*}
+T(p)(x) = p'(x) - \int_0^x p(t) dt.
+\end{align*}
+Then the dimension of the null space of $T$ is
+
+\begin{enumerate}
+    \item 0
+    \item 1
+    \item $n$
+    \item $n+1$
+\end{enumerate}
+%24
+\item Let $M = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & \cos \theta & -\sin \theta \\
+0 & \sin \theta & \cos \theta
+\end{pmatrix}$, where $0 < \theta < \frac{\pi}{2}$. Let $V = \cbrak{ u \in \mathbf{R}^3 : M u^T = u^T }$. Then the dimension of $V$ is
+
+\begin{enumerate}
+    \item 0
+    \item 1
+    \item 2
+    \item 3
+\end{enumerate}
+%25
+\item The number of linearly independent eigenvectors of the matrix
+$
+\begin{pmatrix}
+2 & 2 & 0 & 0 \\
+2 & 1 & 0 & 0 \\
+0 & 0 & 3 & 0 \\
+0 & 0 & 1 & 4
+\end{pmatrix}
+$
+is
+\begin{enumerate}
+    \item 1
+    \item 2
+    \item 3
+    \item 4
+\end{enumerate}
+
+%26
+\item Let f be a bilinear transformation that maps -1 to 1, i to $\infty$ and -i to 0. Then f\brak{1} is equal to
+\begin{enumerate}
+\item -2
+\item -1
+\item i
+\item -i
+\end{enumerate}
+%27
+\item Which one of the following does NOT hold for all continuous functions $f:\sbrak{-\pi,\pi}\rightarrow\mathbf{C}$?
+\begin{enumerate}
+\item if $f\brak{-t}=f\brak{t}$ for each $t \in \sbrak{-/pi,/pi}$, then $\int_{-\pi}^\pi f\brak{t} dt=2\int_{0}^\pi f\brak{t} dt$
+\item If $f\brak{-t}=-f\brak{t}$ for each $t \in \sbrak{-/pi,/pi}$, then $\int_{-\pi}^\pi f\brak{t} dt=0$
+\item $\int_{-\pi}^\pi f\brak{-t} dt=-\int_{-\pi}^\pi f\brak{t} dt=$
+\item There is an $\alpha$ with $-\pi<\alpha<\pi$ such that $\int_{-\pi}^\pi f\brak{t} dt= 2\pi f\brak{\alpha}$
+\end{enumerate}
+%28
+    \item Let  $S$ be the positively oriented circle given by $\abs{z - 3i} = 2 $. Then the value of $\int_{S} \frac{dz}{z^2 + 4}$ is
+    \begin{enumerate}
+        \item $-\frac{\pi}{2} $
+        \item $ \frac{\pi}{2} $
+        \item $ -\frac{i\pi}{2} $
+        \item $ \frac{i\pi}{2} $
+    \end{enumerate}
+%29
+    \item Let $T$ be the closed unit disk and $\partial T$ be the unit circle. Then which one of the following holds for every analytic function $f : T \to \mathbf{C} $.
+    \begin{enumerate}
+        \item $\abs{f}$ attains its minimum and its maximum on $\partial T$
+        \item $\abs{f}$ attains its minimum on $\partial T$ but need not attain its maximum on $\partial T$
+        \item $\abs{f}$ attains its maximum on $\abs{ \partial T}$ but need not attain its minimum on $\abs{ \partial T }$
+        \item $\abs{f}$ need not attain its maximum on  $\partial T$ and also it need not attain its minimum on $\partial T$
+    \end{enumerate}
+%30
+    \item Let  $S$ be the disk  $\abs{z} < 3$ in the complex plane and let $f : S \to \mathbf{C}$  be an analytic function such that
+    $ f\brak{ 1 + \frac{\sqrt{2}}{n}i} = -\frac{2}{n^2}$ for each natural number $n$. Then $ f(\sqrt{2}) $ is equal to
+    \begin{enumerate}
+        \item $3 - 2\sqrt{2}$
+        \item $3 + 2\sqrt{2}$
+        \item $2 - 3\sqrt{2}$
+        \item $2 + 3\sqrt{2}$
+    \end{enumerate}
+%31
+    \item Which one of the following statements holds?
+    \begin{enumerate}
+        \item The series $\sum_{n=0}^{\infty} x^n$ converges for each $x \in \sbrak{-1,1} $
+        \item The series $\sum_{n=0}^{\infty} x^n$ converges uniformly in $\brak{-1, 1}$
+        \item The series $\sum_{n=1}^{\infty} \frac{x^n}{n}$ converges for each $x \in \sbrak{-1,1}$
+        \item The series $\sum_{n=1}^{\infty} \frac{x^n}{n^2}$ converges uniformly in \brak{-1, 1}
+    \end{enumerate}
+%32
+    \item For $x \in \sbrak{-\pi, \pi}$, let
+    \\
+    f(x) = \brak{\pi + x}\brak{\pi - x} and $g(x) = \begin{cases}
+    \cos\brak{1/x} & if x \neq 0, \\
+    0 & if x = 0.
+    \end{cases}$
+   
+    Consider the statements:  
+    P: The Fourier series of $f$ converges uniformly to $f$ on $\sbrak{-\pi, \pi}$.  
+    Q: The Fourier series of $g$ converges uniformly to $g$ on $\sbrak{-\pi, \pi}$.  
+    Then
+    \begin{enumerate}
+        \item P and Q are true
+        \item P is true but Q is false
+        \item P is false but Q is true
+        \item Both P and Q are false
+    \end{enumerate}
+%33
+\item Let $W = \cbrak{\brak{x,y,z} \in \mathbf{R}^3 : 1 \leq x^2 + y^2 + z^2 \leq 4}$ and $F: W \to \mathbf{R}^3$ be defined by
+    $
+    F\brak{x, y, z} = \frac{\brak{x, y, z}}{\sbrak{x^2 + y^2 + z^2}^{3/2}}$ for $\brak{x, y, z} \in$ W.
+    If $\partial W$ denotes the boundary of $W$ oriented by the outward normal $n$ to $W$, then
+    $
+    \iint_{\partial W} F \cdot n \, dS
+    $
+    is equal to
+    \begin{enumerate}
+        \item 0
+        \item $4\pi$
+        \item $8\pi$
+        \item $12\pi$
+    \end{enumerate}
+%34
+    \item For each $n \in \mathbf{N}$, let $f_n: \sbrak{0,1} \to \mathbf{R}$ be a measurable function such that
+    $
+    \abs{f_n(t)} \leq \frac{1}{\sqrt{t}}
+    $
+    for all t $\in$ (0,1]. Let $f: \sbrak{0,1} \to \mathbf{R}$ be defined by
+    $    f\brak{t} = 1 $ if t is irrational and $f\brak{t}=-1$ if t is rational.
+    Assume that $f_n\brak{t} \to f\brak{t}$ as $n \to \infty$ for all $t \in \sbrak{0,1}$. Then
+    \begin{enumerate}
+        \item $f$ is not measurable
+        \item $f$ is measurable and $\int_0^1 f_n d\mu \to 1$ as $n \to \infty$
+        \item $f$ is measurable and $\int_0^1 f_n d\mu \to 0$ as $n \to \infty$
+        \item $f$ is measurable and $\int_0^1 f_n d\mu \to -1$ as $n \to \infty$
+    \end{enumerate}
+\end{enumerate}
+\end{document}
