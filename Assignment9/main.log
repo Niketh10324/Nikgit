@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  26 OCT 2024 15:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.5)  27 OCT 2024 13:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1909,29 +1909,29 @@ Package pdftex.def Info: figs/Q30.png  used on input line 136.
 <figs/optionA.png, id=80, 285.065pt x 170.6375pt>
 File: figs/optionA.png Graphic file (type png)
 <use figs/optionA.png>
-Package pdftex.def Info: figs/optionA.png  used on input line 144.
-(pdftex.def)             Requested size: 142.26378pt x 85.1571pt.
+Package pdftex.def Info: figs/optionA.png  used on input line 143.
+(pdftex.def)             Requested size: 71.13188pt x 42.57855pt.
 <figs/optionB.png, id=81, 283.0575pt x 170.6375pt>
 File: figs/optionB.png Graphic file (type png)
 <use figs/optionB.png>
-Package pdftex.def Info: figs/optionB.png  used on input line 148.
-(pdftex.def)             Requested size: 142.26378pt x 85.76376pt.
+Package pdftex.def Info: figs/optionB.png  used on input line 146.
+(pdftex.def)             Requested size: 71.13188pt x 42.88057pt.
 <figs/optionC.png, id=82, 298.11375pt x 168.63pt>
 File: figs/optionC.png Graphic file (type png)
 <use figs/optionC.png>
-Package pdftex.def Info: figs/optionC.png  used on input line 152.
-(pdftex.def)             Requested size: 142.26378pt x 80.47318pt.
+Package pdftex.def Info: figs/optionC.png  used on input line 149.
+(pdftex.def)             Requested size: 71.13188pt x 40.23529pt.
 <figs/optionD.png, id=83, 289.08pt x 164.615pt>
 File: figs/optionD.png Graphic file (type png)
 <use figs/optionD.png>
-Package pdftex.def Info: figs/optionD.png  used on input line 156.
-(pdftex.def)             Requested size: 142.26378pt x 81.01118pt.
+Package pdftex.def Info: figs/optionD.png  used on input line 152.
+(pdftex.def)             Requested size: 71.13188pt x 40.50558pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3 <./figs/optionA.png> <./figs/optionB.png> <./figs/optionC.png> <./figs/opti
 onD.png>]
-Underfull \vbox (badness 2376) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
 [5] (./main.aux)
@@ -1941,7 +1941,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  50169 strings out of 478287
  1173135 string characters out of 5849290
- 1630029 words of memory out of 5000000
+ 1635038 words of memory out of 5000000
  67466 multiletter control sequences out of 15000+600000
  553981 words of font info for 214 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1953,7 +1953,7 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (5 pages, 227369 bytes).
+Output written on main.pdf (5 pages, 227358 bytes).
 PDF statistics:
  185 PDF objects out of 1000 (max. 8388607)
  138 compressed objects within 2 object streams
