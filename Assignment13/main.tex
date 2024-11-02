@@ -1,0 +1,125 @@
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn, left=1.5in, right=1in]{geometry}
+\usepackage{amsmath, amssymb, amsfonts, amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{calc}
+\usepackage{comment}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+
+\title{GATE-2020-MA-53-65}
+\author{EE24BTECH11047 - Niketh Prakash Achanta}
+\maketitle
+
+\begin{enumerate}[start=53]
+\item Let \(0 < p < 1\) and let 
+\begin{align*}
+    X = \{ f : \mathbb{R} \rightarrow \mathbb{R} \text{ is continuous and } \int_{\mathbb{R}} |f(x)|^p \, dx < \infty \}.
+\end{align*}
+For \(f \in X\), define 
+\begin{align*}
+   \|f\|_p = \left(\int_{\mathbb{R}} |f(x)|^p \, dx\right)^{\frac{1}{p}}. 
+\end{align*}
+Then 
+\begin{enumerate}
+    \item \(\|\cdot\|_p\) defines a norm on \(X\),
+    \item \(\|f + g\|_p \leq \|f\|_p + \|g\|_p\) for all \(f, g \in X\),
+    \item \(\|f + g\|_p^p \leq \|f\|_p^p + \|g\|_p^p\) for all \(f, g \in X\),
+    \item If \(f_n\) converges to \(f\) pointwise on \(\mathbb{R}\), then \(\lim_{n \rightarrow \infty} \|f_n\|_p = \|f\|_p\).
+\end{enumerate}
+
+\item Suppose that \(\phi_1\) and \(\phi_2\) are linearly independent solutions of the differential equation
+\begin{align*}
+   2x^2y'' - (x + x^2)y' + (x^2 - 2)y = 0 
+\end{align*}
+and \(\phi_1(0) = 0\). Then the smallest positive integer \(n\) such that
+\begin{align*}
+    \lim_{x \rightarrow 0} x^n \frac{\phi_2(x)}{\phi_1(x)} = 0
+\end{align*}
+is...
+
+\item Suppose that \(f(z) = \prod_{n=1}^{17} (z - \frac{\pi}{n})\), \(z \in \mathbb{C}\), and \(\gamma(t) = e^{2it}\), \(t \in [0, 2\pi]\). If
+\begin{align*}
+\int_{\gamma} \frac{f'(z)}{f(z)} dz = a\pi i    
+\end{align*}
+then the value of \(a\) is equal to...
+
+\item If \(\gamma(t) = \frac{1}{2} e^{3\pi i t}\), \(t \in [0, 2]\) and
+\begin{align*}
+    \int_{\gamma} \frac{1}{z^2(e^z - 1)} dz = \beta \pi i
+\end{align*}
+(correct up to one decimal place), then \(\beta\) is equal to...
+
+\item Let \(K = \mathbb{Q}(\sqrt{3 + 2\sqrt{2}}, \omega)\), where \(\omega\) is a primitive cube root of unity. Then the degree of extension of \(K\) over \(\mathbb{Q}\) is...
+
+\item Let \(a \in \mathbb{R}\). If \((3,0,0,\beta)\) is an optimal solution of the linear programming problem
+    \begin{align*}
+        \text{minimize} \ & x_1 + x_2 + x_3 - ax_4 \\
+        \text{subject to} \ & 2x_1 - x_2 + x_3 = 6 \\
+        & -x_1 + x_2 + x_4 = 3 \\
+        & x_1, x_2, x_3, x_4 \geq 0,
+    \end{align*}
+    then the maximum value of \(|\beta - a|\) is...
+
+\item Suppose that \(T: \mathbb{R}^4 \rightarrow \mathbb{R}[x]\) is a linear transformation over \(\mathbb{R}\) satisfying
+\begin{align*}
+    T(-1,1,1,1) &= x^2 + 2x^4 \\
+    T(1,2,3,4) &= 1 - x^2 \\
+    T(2,-1,-1,0) &= x^3 - x^4.
+\end{align*}
+Then the coefficient of \(x\) in \(T(-3,5,6,6)\) is...
+
+\item Let \(\mathbf{F}(x,y,z) = (2x - 2y\cos x)\mathbf{i} + (2y - y^2\sin x)\mathbf{j} + 4z\mathbf{k}\) and let \(S\) be the surface of the tetrahedron bounded by the planes \(x = 0\), \(y = 0\), \(z = 0\), and \(x + y + z = 1\). If \(\mathbf{n}\) is the unit outward normal to the tetrahedron, then the value of
+\begin{align*}
+    \iint_S \mathbf{F} \cdot \mathbf{n} \, dS 
+\end{align*}
+(rounded off to two decimal places) is...
+
+\item Let \(\mathbf{F} = (x + 2y)e^x \mathbf{i} + (ye^x + x^2)\mathbf{j} + y^2x\mathbf{k}\) and let \(S\) be the surface \(x^2 + y^2 + z = 1\), \(x \geq 0\). If \(\mathbf{n}\) is a unit normal to \(S\) and
+\begin{align*}
+    \left| \iint_S (\nabla \times \mathbf{F}) \cdot \mathbf{n} \, dS \right| = \alpha \pi, 
+\end{align*}
+then \(\alpha\) is equal to...
+
+\item Let \(G\) be a non-cyclic group of order 57. Then the number of elements of order 3 in \(G\) is...
+
+\item The coefficient of \((x-1)^5\) in the Taylor expansion about \(x = 1\) of the function
+\begin{align*}
+    F(x) = \int_1^x \frac{\log_e t}{t-1} \, dt, \quad 0 < x < 2 
+\end{align*}
+(correct up to two decimal places) is...
+
+\item Let \(u(x, y)\) be the solution of the initial value problem 
+\begin{align*}
+\frac{\partial u}{\partial x} + \sqrt{u} \frac{\partial u}{\partial y} &= 0, \\
+u(x, 0) &= 1 + x^2.
+\end{align*}
+Then the value of \(u(0, 1)\) is (rounded off to three decimal places)...
+
+\item The value of 
+\begin{align*}
+\lim_{n \to \infty} \int_0^1 nx^n e^{x^2} \, dx
+\end{align*}
+is...
+\end{enumerate}
+
+\end{document}
+
