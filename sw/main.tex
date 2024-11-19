@@ -1,0 +1,108 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Eigenvalues}
+\author{EE24BTECH11047 - Niketh Prakash Achanta
+}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+\section{Introduction}
+\subsection{Eigenvalues $\rightarrow$ What?}
+In linear algebra, an eigenvector or characteristic vector is a vector that has its direction unchanged (or reversed) by a given linear transformation. More precisely, an eigenvector, $\mathbf{v}$ is scaled by a constant factor, $\lambda$ when the linear transformation is applied to it: 
+\begin{align*}
+    A\mathbf{v}=\lambda\mathbf{v}
+\end{align*}
+The corresponding eigenvalue, characteristic value, or characteristic root is the multiplying factor $\lambda$.
+\subsection{Choice of algorithm}
+To find eigenvalues of matrices, multiple algorithms have been designed with varying time complexities. A widely used option is the \textbf{QR} algorithm.
+\subsection{Working of algorithm}
+The \textbf{QR} algorithm involves the \textbf{QR} decomposition, where the given matrix is converted and denoted as the product of an orthogonal \brak{\textbf{Q}} and an upper-triangular \brak{\textbf{R}} matrix.\\
+\section{Comparison}
+The table below compares selected algorithms for computing eigenvalues, focusing on their descriptions and time complexities.
+
+\begin{table}[h!]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Algorithm} & \textbf{Description} & \textbf{Time Complexity} \\ \hline
+Power Method       & Iteratively finds the dominant eigenvalue and eigenvector. & \(O(n^2)\) per iteration \\ \hline
+QR Algorithm       & Computes all eigenvalues using QR factorization.          & \(O(n^3)\) per iteration \\ \hline
+Jacobi Method      & Rotates the matrix to diagonal form, suitable for symmetric matrices. & \(O(n^3)\) \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+
+\section{Implementation}
+\subsection{QR decomposition}
+To apply QR decomposition, there are various methods. I have chosen Givens' rotations to decompose the initial matrix.
+\subsection{Givens' Rotations}
+In the method of Givens Rotation, similar to Gram-Schmidt and Householder Transformation, we try to decompose each column vector in A to a set of linear combinations of orthogonal vectors in Q.
+We map the column vector to a set of orthogonal vectors by rotating it, instead of reflecting it.
+\subsection{Iterative QR decomposition} 
+Once the QR decomposition is applied once on the given matrix, we get the product QR. Then a matrix $A_1$ is defined as:
+\begin{align*}
+    A_1=RQ
+\end{align*}
+The decomposition is then done again on this new matrix $A_1$, and this goes on till $A_k$ is found, where $k \to \infty$. 
+\subsection{Convergence}
+The diagonal entries of $A_k$ converge to the eigenvalues of matrix A.
+\subsection{Complexity}
+The time complexity of the QR algorithm is calculated to be $O\brak{n^3}$ where n is the order of the matrix.
+\subsection{Choice of programming language}
+I have chosen "C" language to implement this algorithm.
+\section{Conclusion}
+In conclusion, QR algorithm works as an all-purpose algorithm, as:
+\begin{enumerate}
+    \item[$\cdot$] It works for all square matrices.
+    \item[$\cdot$] It finds all eigenvalues (real and complex).
+    \item[$\cdot$] When applied to symmetric matrices, the QR algorithm converges faster and directly computes real eigenvalues, leveraging the matrix's properties.    
+\end{enumerate}
+\end{document}
